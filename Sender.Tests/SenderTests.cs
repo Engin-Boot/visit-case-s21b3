@@ -22,7 +22,8 @@ namespace Sender.Tests
         public void WhenGivenNullStringThenFalse()
         {
              var output = senderObject.SendingMessage("");
-            Assert.True(output);
+              Assert.False(output);
         }
+        
     }
 }
