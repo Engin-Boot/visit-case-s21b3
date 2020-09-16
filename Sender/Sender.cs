@@ -5,7 +5,7 @@ namespace Sender
     public class sender
     {
         public bool SendingMessage(String input)
-        {
+         {
             if (input.Length != 0)
             {
                 String output = input;
@@ -16,7 +16,7 @@ namespace Sender
             {
                 return false;
             }
-        }
-
+         }
+            
     }
 }
