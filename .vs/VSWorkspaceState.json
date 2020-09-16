@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github"
+    "\\Sender\\bin",
+    "\\Sender\\bin\\Debug",
+    "\\Sender\\bin\\Release"
   ],
-  "SelectedNode": "\\.github",
+  "SelectedNode": "\\VisitCase.sln",
   "PreviewInSolutionExplorer": false
 }
