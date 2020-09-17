@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EkvnJHdzzAcZXn9lk1psLM++2TJ4TPRHCGPddpLuuPdKmNvT7ZjkOt6Mg6yMEIQocJPpnkVpWKvQdG1eqBR2Qg==",
+  "success": true,
+  "projectFilePath": "E:\\VisitCase\\Receiver\\Receiver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muskan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\muskan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

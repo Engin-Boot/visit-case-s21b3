@@ -1,0 +1,9 @@
+E:\VisitCase\Receiver\bin\Debug\netstandard2.0\Receiver.deps.json
+E:\VisitCase\Receiver\bin\Debug\netstandard2.0\Receiver.dll
+E:\VisitCase\Receiver\bin\Debug\netstandard2.0\Receiver.pdb
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.csprojAssemblyReference.cache
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.AssemblyInfoInputs.cache
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.AssemblyInfo.cs
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.csproj.CoreCompileInputs.cache
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.dll
+E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.pdb
