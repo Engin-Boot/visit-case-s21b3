@@ -2,7 +2,8 @@
 
 namespace Receiver
 {
-    public class Class1
+    public class ReceiverMain
     {
+      
     }
 }
