@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VisitCase\\Sender\\Sender.csproj": {}
+    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj": {}
   },
   "projects": {
-    "E:\\VisitCase\\Sender\\Sender.csproj": {
+    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisitCase\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "E:\\VisitCase\\Sender\\Sender.csproj",
+        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
         "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-        "outputPath": "E:\\VisitCase\\Sender\\obj\\",
+        "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

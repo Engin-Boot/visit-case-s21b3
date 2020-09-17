@@ -7,3 +7,12 @@ E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.AssemblyInfo.cs
 E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.csproj.CoreCompileInputs.cache
 E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.dll
 E:\VisitCase\Receiver\obj\Debug\netstandard2.0\Receiver.pdb
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\bin\Debug\netstandard2.0\Receiver.deps.json
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\bin\Debug\netstandard2.0\Receiver.dll
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\bin\Debug\netstandard2.0\Receiver.pdb
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.csprojAssemblyReference.cache
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.AssemblyInfoInputs.cache
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.AssemblyInfo.cs
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.csproj.CoreCompileInputs.cache
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.dll
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\netstandard2.0\Receiver.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VisitCase\\Receiver.tests\\Receiver.tests.csproj": {}
+    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj": {}
   },
   "projects": {
-    "E:\\VisitCase\\Receiver.tests\\Receiver.tests.csproj": {
+    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisitCase\\Receiver.tests\\Receiver.tests.csproj",
+        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj",
         "projectName": "Receiver.tests",
-        "projectPath": "E:\\VisitCase\\Receiver.tests\\Receiver.tests.csproj",
+        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj",
         "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-        "outputPath": "E:\\VisitCase\\Receiver.tests\\obj\\",
+        "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\VisitCase\\Receiver\\Receiver.csproj": {
-                "projectPath": "E:\\VisitCase\\Receiver\\Receiver.csproj"
+              "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj": {
+                "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "E:\\VisitCase\\Receiver\\Receiver.csproj": {
+    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisitCase\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "E:\\VisitCase\\Receiver\\Receiver.csproj",
+        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
         "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-        "outputPath": "E:\\VisitCase\\Receiver\\obj\\",
+        "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
