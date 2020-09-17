@@ -14,16 +14,24 @@ namespace Sender
     {
         static void Main(string[] args)
         {
-            try
+             try
             {
                 string executableLocation = Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location);
                 string csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
 
-                SenderInput inputData = new SenderInput();
-                ArrayList footFallData = inputData.readSensorData(csvFilePath);
-
-                PrintOnConsole printOnConsole = new PrintOnConsole();
-                printOnConsole.printListData(footFallData);
+                StreamReader source = new StreamReader(csvFilePath);
+                ArrayList footFallData = new ArrayList();
+                string line;
+                while ((line = source.ReadLine()) != null)
+                {
+                    footFallData.Add(line);
+                    // Console.WriteLine(line);
+                }
+                
+                foreach (string data in footFallData)
+                {
+                    Console.WriteLine(data);
+                }
             }
             catch (Exception ex)
             {
