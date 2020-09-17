@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\case-study-1\\Receiver\\Receiver.csproj",
+      "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
       "projectName": "Receiver",
-      "projectPath": "E:\\case-study-1\\Receiver\\Receiver.csproj",
+      "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
       "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-      "outputPath": "E:\\case-study-1\\Receiver\\obj\\",
+      "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
