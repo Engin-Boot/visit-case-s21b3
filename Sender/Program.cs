@@ -25,7 +25,6 @@ namespace Sender
                 while ((line = source.ReadLine()) != null)
                 {
                     footFallData.Add(line);
-                    // Console.WriteLine(line);
                 }
                 
                 foreach (string data in footFallData)
