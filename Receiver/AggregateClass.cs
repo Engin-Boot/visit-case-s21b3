@@ -8,70 +8,69 @@ namespace Receiver
 {
     class AggregateClass
     {
-        IDictionary<string, string> _DateAndDay = new Dictionary<string, string>();
+        IDictionary<string, int> _DayAndCount = new Dictionary<string, int>();
         IDictionary<string, ArrayList> _DateAndTime = new Dictionary<string, ArrayList>();
         string currentdate = null;
         ArrayList _time = new ArrayList();
-        
-        public void SetDateAndDay(string StringFromConsole)
-        {
-            char[] separator = { ' ' };
+
+        public void StoreString(string StringFromConsole)
+        { char[] separator = { ',' };
             Int32 NoOfString = 3;
-            String[] StringAfterSplit = StringFromConsole.Split(separator, NoOfString);
-            if (String.IsNullOrEmpty(currentdate))
+            String[] StringAfterSplit = StringFromConsole.Split(separator, NoOfString); //0-date 1-day 2-time
+
+            SetDayAndCount(StringAfterSplit[1]);
+            SetDateAndTime(StringAfterSplit[0], StringAfterSplit[2]);
+
+        }
+        
+        private void SetDayAndCount(string DayFromString)
+        {
+            int CounterOfDays;
+            if (_DayAndCount.ContainsKey(DayFromString))
             {
-                currentdate = StringAfterSplit[0]; //0-date 1-day 2-time
-                _DateAndDay.Add(StringAfterSplit[0], StringAfterSplit[1]);
-                
+                if (_DayAndCount.TryGetValue(DayFromString, out CounterOfDays))
+                {
+                    _DayAndCount[DayFromString] = CounterOfDays + 1;
+                }
+
             }
             else
             {
-                if (currentdate.Equals(StringAfterSplit[0]))
-                {
-                    return;
-                }
-                else
-                {
-                    currentdate = StringAfterSplit[0]; //0-date 1-day 2-time
-                    _DateAndDay.Add(StringAfterSplit[0], StringAfterSplit[1]);
-
-                }
+                _DayAndCount.Add(DayFromString, 1);
             }
+            
 
         }
 
-        public void SetDateAndTime(string StringFromConsole)
-            {
-            char[] separator = { ' ' };
-            Int32 NoOfString = 3;
-            String[] StringAfterSplit = StringFromConsole.Split(separator, NoOfString);
-            if (String.IsNullOrEmpty(currentdate))
+        private void SetDateAndTime(string DateFromString, string TimefromString)
+        {
+                if (String.IsNullOrEmpty(currentdate))
             { 
-                currentdate = StringAfterSplit[0];
-                _time.Add(StringAfterSplit[2]);
-                _DateAndTime.Add(StringAfterSplit[0], _time);
+                currentdate = DateFromString;
+                _time.Add(TimefromString);
+                _DateAndTime.Add(DateFromString, _time);
                
             }
             else
             {
-                 if (currentdate.Equals(StringAfterSplit[0]))
+                 if (currentdate.Equals(DateFromString))
                 {
                     ArrayList _time2;
-                    if (_DateAndTime.ContainsKey(StringAfterSplit[0]))
+                    if (_DateAndTime.ContainsKey(DateFromString))
                     {
-                        if (_DateAndTime.TryGetValue(StringAfterSplit[0], out _time2))
+                        if (_DateAndTime.TryGetValue(DateFromString, out _time2))
                         {
-                            _time2.Add(StringAfterSplit[2]);
+                            _time2.Add(TimefromString);
                         }
 
                     }
                 }
                  else
                 {
-                    currentdate = StringAfterSplit[0]; //0-date 1-day 2-time
+                    currentdate = DateFromString; //0-date 1-day 2-time
                     ArrayList _time = new ArrayList();
-                    _time.Add(StringAfterSplit[2]);
-                    _DateAndTime.Add(StringAfterSplit[0], _time);
+                    _time.Add(TimefromString);
+                    _DateAndTime.Add(DateFromString, _time);
                 }
 
             }

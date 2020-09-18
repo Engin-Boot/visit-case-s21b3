@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github"
+    "\\.github",
+    "\\Receiver"
   ],
-  "SelectedNode": "\\VisitCase.sln",
+  "SelectedNode": "\\Receiver\\AggregateClass.cs",
   "PreviewInSolutionExplorer": false
 }
