@@ -8,10 +8,9 @@ namespace Receiver
 {
     class AggregateClass
     {
-        IDictionary<string, int> _DayAndCount = new Dictionary<string, int>();
-        IDictionary<string, ArrayList> _DateAndTime = new Dictionary<string, ArrayList>();
-        string currentdate = null;
-        ArrayList _time = new ArrayList();
+        private IDictionary<string, int> _DayAndCount = new Dictionary<string, int>();
+        private IDictionary<string, ArrayList> _DateAndTime = new Dictionary<string, ArrayList>();
+        private string currentdate = null;
 
         public void StoreString(string StringFromConsole)
         { char[] separator = { ',' };
@@ -44,16 +43,7 @@ namespace Receiver
 
         private void SetDateAndTime(string DateFromString, string TimefromString)
         {
-                if (String.IsNullOrEmpty(currentdate))
-            { 
-                currentdate = DateFromString;
-                _time.Add(TimefromString);
-                _DateAndTime.Add(DateFromString, _time);
-               
-            }
-            else
-            {
-                 if (currentdate.Equals(DateFromString))
+            if (currentdate.Equals(DateFromString))
                 {
                     ArrayList _time2;
                     if (_DateAndTime.ContainsKey(DateFromString))
@@ -64,17 +54,15 @@ namespace Receiver
                         }
 
                     }
-                }
+               }
                  else
                 {
-                    currentdate = DateFromString; //0-date 1-day 2-time
+                    currentdate = DateFromString; 
                     ArrayList _time = new ArrayList();
                     _time.Add(TimefromString);
                     _DateAndTime.Add(DateFromString, _time);
                 }
 
-            }
-
-           }
+        }
     }
 }
