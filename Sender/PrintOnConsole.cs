@@ -15,6 +15,7 @@ namespace Sender
             for (int i = 0; i < arr.Count; i++)
             {
                 Console.WriteLine(arr[i]);
+
             }
         }
     }
