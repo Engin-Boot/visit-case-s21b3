@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Sender",
-    "\\Sender\\bin\\Debug"
+    "\\.github"
   ],
-  "SelectedNode": "\\Sender\\PrintOnConsole.cs",
+  "SelectedNode": "\\VisitCase.sln",
   "PreviewInSolutionExplorer": false
 }
