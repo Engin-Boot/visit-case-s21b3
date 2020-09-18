@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj": {}
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj": {
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
-        "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\obj\\",
+        "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj",
+        "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\muskan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

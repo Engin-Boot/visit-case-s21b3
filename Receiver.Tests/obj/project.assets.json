@@ -3489,23 +3489,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muskan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Ekta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj",
-      "projectName": "Receiver.tests",
-      "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\Receiver.tests.csproj",
-      "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver.tests\\obj\\",
+      "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-study\\Receiver.Tests\\Receiver.Tests.csproj",
+      "projectName": "Receiver.Tests",
+      "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-study\\Receiver.Tests\\Receiver.Tests.csproj",
+      "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-study\\Receiver.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\muskan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3518,8 +3514,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj": {
-              "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj"
+            "C:\\Users\\Ekta\\Source\\Repos\\visit-case-study\\Receiver\\Receiver.csproj": {
+              "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-study\\Receiver\\Receiver.csproj"
             }
           }
         }
@@ -3565,7 +3561,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
