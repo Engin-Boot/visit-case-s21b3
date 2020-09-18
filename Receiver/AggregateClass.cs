@@ -10,7 +10,6 @@ namespace Receiver
     {
         private IDictionary<string, int> _DayAndCount = new Dictionary<string, int>();
         private IDictionary<string, ArrayList> _DateAndTime = new Dictionary<string, ArrayList>();
-        private string currentdate = null;
 
         public void StoreString(string StringFromConsole)
         { char[] separator = { ',' };
@@ -43,21 +42,18 @@ namespace Receiver
 
         private void SetDateAndTime(string DateFromString, string TimefromString)
         {
-            if (currentdate.Equals(DateFromString))
-                {
-                    ArrayList _time2;
-                    if (_DateAndTime.ContainsKey(DateFromString))
-                    {
-                        if (_DateAndTime.TryGetValue(DateFromString, out _time2))
-                        {
-                            _time2.Add(TimefromString);
-                        }
 
-                    }
-               }
-                 else
+            if (_DateAndTime.ContainsKey(DateFromString))
+            {
+                ArrayList _time2;
+                if (_DateAndTime.TryGetValue(DateFromString, out _time2))
                 {
-                    currentdate = DateFromString; 
+                    _time2.Add(TimefromString);
+                }
+
+            }
+            else
+                {
                     ArrayList _time = new ArrayList();
                     _time.Add(TimefromString);
                     _DateAndTime.Add(DateFromString, _time);
