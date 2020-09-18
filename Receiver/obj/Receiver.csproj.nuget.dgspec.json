@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Receiver\\Receiver.csproj": {}
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Receiver\\Receiver.csproj": {
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Receiver\\Receiver.csproj",
+        "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\Receiver.csproj",
         "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Receiver\\obj\\",
+        "outputPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-study\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",

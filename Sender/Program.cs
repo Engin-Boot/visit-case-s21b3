@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Linq.Expressions;
 using System.Reflection;
 
 namespace Sender
@@ -14,7 +15,7 @@ namespace Sender
     {
         static void Main(string[] args)
         {
-             try
+            try
             {
                 string executableLocation = Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location);
                 string csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
@@ -25,6 +26,7 @@ namespace Sender
                 while ((line = source.ReadLine()) != null)
                 {
                     footFallData.Add(line);
+                    // Console.WriteLine(line);
                 }
                 
                 foreach (string data in footFallData)

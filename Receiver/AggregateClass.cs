@@ -8,6 +8,7 @@ namespace Receiver
 {
     class AggregateClass
     {
+        /*
         IDictionary<string, string> _DateAndDay = new Dictionary<string, string>();
         IDictionary<string, ArrayList> _DateAndTime = new Dictionary<string, ArrayList>();
         string currentdate = null;
@@ -77,5 +78,6 @@ namespace Receiver
             }
 
            }
+        */
     }
 }
