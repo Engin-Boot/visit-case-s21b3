@@ -25,6 +25,7 @@ namespace Sender.Tests
             isFileExtensionCorrect = infoOfInputFile.Extension.Equals(".csv");
             Assert.True(isFileExtensionCorrect, "correct file extension");
         }
+        /*
 
         [Fact]
         public void WhenFileExistsAtTheSpecifiedLocationThenSenderWillReadTheFile()
@@ -34,5 +35,6 @@ namespace Sender.Tests
             isFilePresent = File.Exists(filePath);
             Assert.False(isFilePresent, filePath);
         }
+        */
     }
 }
