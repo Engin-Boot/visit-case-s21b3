@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {}
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
         "projectName": "Sender.Tests",
-        "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
+        "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
         "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender\\Sender.csproj": {
-                "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender\\Sender.csproj"
+              "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender\\Sender.csproj": {
+                "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender\\Sender.csproj"
               }
             }
           }
@@ -78,11 +78,11 @@
         }
       }
     },
-    "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender\\Sender.csproj": {
+    "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender\\Sender.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3\\Sender\\Sender.csproj"
+        "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3\\Sender\\Sender.csproj"
       },
       "frameworks": {
         "net472": {}

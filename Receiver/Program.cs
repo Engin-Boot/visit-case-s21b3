@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections;
+//using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace Receiver
 {
@@ -19,7 +19,7 @@ namespace Receiver
 
         static void GetAvgPerDayInWeekForAMonth(List<double> avgPerDayInWeekList, Aggregate inputObj)
         {
-            string[] daysName = new string[7] { "Mon", "Tue", "Wed","Thu","Fri","Sat","Sun" };
+            string[] daysName = { "Mon", "Tue", "Wed","Thu","Fri","Sat","Sun" };
             for (int i = 0; i < 7; i++)
             {
                 avgPerDayInWeekList.Add(inputObj.GetAvgPerDayInWeek(daysName[i]));
@@ -28,7 +28,7 @@ namespace Receiver
 
 
 
-        static void Main(string[] args)
+        static void Main()
         {
             Aggregate inputObj= new Aggregate();
             
@@ -65,13 +65,13 @@ namespace Receiver
 
             List<double> avgPerHourInDayList = new List<double>();
             List<double> avgPerDayInWeekList = new List<double>();
-            String peakDayInMonth = "";
+           // String peakDayInMonth = "";
 
            
 
             GetAvgPerHourInDayForAWeek(avgPerHourInDayList, inputObj);
             GetAvgPerDayInWeekForAMonth(avgPerDayInWeekList, inputObj);
-            peakDayInMonth=inputObj.GetPeakInMonth();
+            string peakDayInMonth=inputObj.GetPeakInMonth();
             Console.WriteLine("----------per hour------------");
             foreach (double item in avgPerHourInDayList)
             {

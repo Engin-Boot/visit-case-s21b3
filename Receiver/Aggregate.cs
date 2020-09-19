@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Collections;
 
 namespace Receiver
@@ -38,7 +38,7 @@ namespace Receiver
             }
         }
 
-        public bool CompareTime(string time , int start)
+        private bool CompareTime(string time , int start)
         {
             bool ans = false;
             int timeGiven= Int32.Parse(time.Substring(0, 2));
@@ -49,7 +49,7 @@ namespace Receiver
             return ans;
         }
 
-        public int GetVisitCountOfAnHour(ArrayList timeList, int start)
+        private int GetVisitCountOfAnHour(ArrayList timeList, int start)
         {
             int count2 = 0;
             foreach (string time in timeList)
@@ -67,7 +67,7 @@ namespace Receiver
             int count = 0;
             for (int i = 0; i < 7; i++)
             {
-                string date = _dateAndTime.ElementAt(i).Key;
+               // string date = _dateAndTime.ElementAt(i).Key;
                 ArrayList timeList = _dateAndTime.ElementAt(i).Value;
                 
                 count += GetVisitCountOfAnHour(timeList, start);
