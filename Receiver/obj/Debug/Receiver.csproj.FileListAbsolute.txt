@@ -1,0 +1,7 @@
+C:\Users\Ekta\source\repos\Receiver\Receiver\obj\Debug\Receiver.csproj.CoreCompileInputs.cache
+C:\Users\Ekta\source\repos\Receiver\Receiver\bin\Debug\Receiver.exe.config
+C:\Users\Ekta\source\repos\Receiver\Receiver\bin\Debug\Receiver.exe
+C:\Users\Ekta\source\repos\Receiver\Receiver\bin\Debug\Receiver.pdb
+C:\Users\Ekta\source\repos\Receiver\Receiver\obj\Debug\Receiver.exe
+C:\Users\Ekta\source\repos\Receiver\Receiver\obj\Debug\Receiver.pdb
+C:\Users\Ekta\source\repos\Receiver\Receiver\obj\Debug\Receiver.csprojAssemblyReference.cache
