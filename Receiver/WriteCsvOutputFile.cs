@@ -19,7 +19,7 @@ namespace Receiver
        string path = @"c:\Result.csv";
        private string _seperator = ",";
        readonly string s = "E04";
-        public void WriteToCsvFromList(string heading, List<double> Input)
+        private void WriteToCsvFromList(string heading, List<double> Input)
         {
             _output.AppendLine(heading);
             _output.AppendLine();

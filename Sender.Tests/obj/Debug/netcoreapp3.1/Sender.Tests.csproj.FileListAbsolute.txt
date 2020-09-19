@@ -184,7 +184,6 @@ C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcore
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\Sender.dll
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\Sender.pdb
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcoreapp3.1\Sender.Tests.csprojAssemblyReference.cache
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcoreapp3.1\Sender.Tests.AssemblyInfoInputs.cache
@@ -194,3 +193,5 @@ C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcore
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcoreapp3.1\Sender.Tests.dll
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcoreapp3.1\Sender.Tests.pdb
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\netcoreapp3.1\Sender.Tests.genruntimeconfig.cache
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\Sender.exe
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\bin\Debug\netcoreapp3.1\Sender.exe.config

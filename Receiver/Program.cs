@@ -9,15 +9,15 @@ namespace Receiver
 {
     class Program
     {
-        static void GetAvgPerHourInDayForAWeek(List<double> avgPerHourInDayList, Aggregate inputObj)
+        static void GetAvgPerHourInDayForAWeek(List<double> avgPerHourInDayList, AggregateClass inputObj)
         {
-            for (int i = 9; i < 16; i++)
+            for (int i = 0; i < 24; i++)
             {
                 avgPerHourInDayList.Add(inputObj.GetAvgPerHourInDay(i));
             }
         }
 
-        static void GetAvgPerDayInWeekForAMonth(List<double> avgPerDayInWeekList, Aggregate inputObj)
+        static void GetAvgPerDayInWeekForAMonth(List<double> avgPerDayInWeekList, AggregateClass inputObj)
         {
             string[] daysName = { "Mon", "Tue", "Wed","Thu","Fri","Sat","Sun" };
             for (int i = 0; i < 7; i++)
@@ -30,15 +30,15 @@ namespace Receiver
 
         static void Main()
         {
-            Aggregate inputObj= new Aggregate();
+            AggregateClass inputObj= new AggregateClass();
             
             string input;
             
             while ((input = Console.ReadLine()) != null)
             {
                 var dayDayTime = input.Split(new[] {','}, 3);
-                inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
-                inputObj.SetDayCount(dayDayTime[1]);
+                bool a = inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
+                bool b = inputObj.SetDayCount(dayDayTime[1]);
             }
             /*
             inputObj.SetDateAndTime("01-09-2020", "09:10:11");

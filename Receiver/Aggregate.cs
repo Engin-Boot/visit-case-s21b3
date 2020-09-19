@@ -7,35 +7,83 @@ using System.Collections;
 
 namespace Receiver
 {
-    class Aggregate
+   public class AggregateClass
     {
         readonly Dictionary<string, ArrayList> _dateAndTime = new Dictionary<string, ArrayList>();
         readonly Dictionary<string, Int32> _dayAndCount = new Dictionary<string, int>();
 
+        
+        public bool SetDateAndTime(string date, string time)
 
-        public void SetDateAndTime(string date, string time)
-        {
-            if (_dateAndTime.TryGetValue(date, out ArrayList timeForDate))
+        {  bool isDateTimeInserted = false;
+           
+            if (String.IsNullOrEmpty(date) || String.IsNullOrEmpty(time))
+            {
+                return isDateTimeInserted;
+            }
+            else if  (Int32.Parse(date.Substring(0,2)) <= 0 || (Int32.Parse(date.Substring(0,2)) > 31))
+            {
+                return isDateTimeInserted;
+            }
+
+            else if (Int32.Parse(time.Substring(0, 2)) < 0 || Int32.Parse(time.Substring(0, 2)) >= 24)
+            {
+                return isDateTimeInserted;
+            }
+
+            else if (Int32.Parse(time.Substring(3, 2)) < 0 || Int32.Parse(time.Substring(3, 2)) >= 60)
+            {
+                return isDateTimeInserted;
+            }
+            else if (Int32.Parse(time.Substring(6, 2)) < 0 || Int32.Parse(time.Substring(6, 2)) >= 60)
+            {
+                return isDateTimeInserted;
+            }
+            
+            else if (_dateAndTime.TryGetValue(date, out ArrayList timeForDate))
             {
                 timeForDate.Add(time);
+                isDateTimeInserted = true;
+
             }
-            else
+            else 
             {
                 ArrayList arr2 = new ArrayList { time };
                 _dateAndTime.Add(date, arr2);
+                isDateTimeInserted = true;
             }
+
+            return isDateTimeInserted;
         }
 
-        public void SetDayCount(String day)
+        public bool SetDayCount(String day)
         {
-            if (_dayAndCount.TryGetValue(day, out int count))
+            string[] _Days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+
+            bool isDayInserted = false;
+            for (int i = 0; i < _Days.Length; i++)
+            {
+                if (string.Equals(day, _Days[i]))
+                {
+                    isDayInserted = true;
+                }
+            }
+           if (String.IsNullOrEmpty(day))
+            {
+                return isDayInserted;
+            }
+            else if (_dayAndCount.TryGetValue(day, out int count) && isDayInserted )
             {
                 _dayAndCount[day] = count + 1;
+                
             }
-            else
+            else if (isDayInserted)
             {
                 _dayAndCount.Add(day, 1);
+               
             }
+
+            return isDayInserted;
         }
 
         private bool CompareTime(string time , int start)
@@ -75,7 +123,8 @@ namespace Receiver
             }
 
             double ans = (count * 1.0) / 7;
-            return ans;
+            double value = Math.Round(ans, 2, MidpointRounding.ToEven);
+            return value;
 
         }
 
@@ -84,7 +133,8 @@ namespace Receiver
             Console.WriteLine(day);
             Int32 sumOfFootFallInDay = _dayAndCount[day];
             double ans = (sumOfFootFallInDay*1.0) / 4;
-            return ans;
+            double value = Math.Round(ans, 2, MidpointRounding.ToEven);
+            return value;
         }
 
         public string GetPeakInMonth()

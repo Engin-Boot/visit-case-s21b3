@@ -85,7 +85,12 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj"
+        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Receiver\\Receiver.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}
