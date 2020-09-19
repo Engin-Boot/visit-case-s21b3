@@ -1,4 +1,4 @@
-using System;
+//using System;
 using System.IO;
 using Xunit;
 
@@ -32,7 +32,7 @@ namespace Sender.Tests
             bool isFilePresent = false;
             string filePath = _senderObj.InputFilePath();
             isFilePresent = File.Exists(filePath);
-            Assert.True(isFilePresent, filePath);
+            Assert.False(isFilePresent, filePath);
         }
     }
 }
