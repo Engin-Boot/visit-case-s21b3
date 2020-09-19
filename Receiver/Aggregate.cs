@@ -14,45 +14,48 @@ namespace Receiver
 
         private bool IsDateValid(string date)
         {
-            if (String.IsNullOrEmpty(date))
-            {
+            DateTime fromDateValue; 
+            var formats = new[] { "dd/MM/yyyy" }; 
+            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out fromDateValue))
+            { 
+                return true;
+            } 
+            else
+            { 
                 return false;
             }
-            else if  (Int32.Parse(date.Substring(0,2)) <= 0 || (Int32.Parse(date.Substring(0,2)) > 31))
-            {
-                return false;
-            }
-
-            return true;
         }
 
         private bool IsTimeValid(string time)
-        {
-            if (Int32.Parse(time.Substring(0, 2)) < 0 || Int32.Parse(time.Substring(0, 2)) >= 24 || Int32.Parse(time.Substring(3, 2)) < 0 || Int32.Parse(time.Substring(3, 2)) >= 60 || Int32.Parse(time.Substring(6, 2)) < 0 || Int32.Parse(time.Substring(6, 2)) >= 60)
-            {
-                return false;
-            }
-
-            return true;
+        { 
+            TimeSpan dummyOutput;
+            return TimeSpan.TryParse(time, out dummyOutput);
         }
+
+        private void AddDateAndTime(string date, string time)
+        {
+            if (_dateAndTime.TryGetValue(date, out ArrayList timeForDate))
+            {
+                timeForDate.Add(time);
+            }
+            else 
+            {
+                ArrayList arr2 = new ArrayList { time };
+                _dateAndTime.Add(date, arr2);
+
+            }
+        }
+
         public bool SetDateAndTime(string date, string time)
 
         {
             bool isDateValid = IsDateValid(date);
             bool isTimeValid = IsTimeValid(time);
-            
-            if (_dateAndTime.TryGetValue(date, out ArrayList timeForDate) && isTimeValid && isDateValid)
-            {
-                timeForDate.Add(time);
-                return true;
 
-            }
-            else if(isTimeValid && isDateValid)
+            if (isDateValid && isTimeValid)
             {
-                ArrayList arr2 = new ArrayList { time };
-                _dateAndTime.Add(date, arr2);
+                AddDateAndTime(date, time);
                 return true;
-
             }
 
             return false;
@@ -60,10 +63,6 @@ namespace Receiver
 
         private bool IsDayValid(string day)
         {
-            if (String.IsNullOrEmpty(day))
-            {
-                return false;
-            }
             string[] _Days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 
             bool validDay = false;
@@ -79,19 +78,25 @@ namespace Receiver
 
         }
 
+        private void AddDayCount(string day)
+        {
+            if (_dayAndCount.TryGetValue(day, out int count))
+            {
+                _dayAndCount[day] = count + 1;
+            }
+            else 
+            {
+                _dayAndCount.Add(day, 1);
+            }
+
+        }
         public bool SetDayCount(String day)
         {
             bool isDayValid = IsDayValid(day);
 
-            if (_dayAndCount.TryGetValue(day, out int count) && isDayValid )
+            if (isDayValid)
             {
-                _dayAndCount[day] = count + 1;
-                
-            }
-            else if(isDayValid)
-            {
-                _dayAndCount.Add(day, 1);
-               
+                AddDayCount(day);
             }
 
             return isDayValid;
