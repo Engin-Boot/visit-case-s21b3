@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections;
-using System.Reflection;
+//using System.Reflection;
 
 namespace Sender
 {
@@ -11,8 +11,8 @@ namespace Sender
         {
             try
             {
-                string executableLocation = Path.GetDirectoryName( Assembly.GetExecutingAssembly().Location);
-                string csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
+                GetInputFilePath inputPath = new GetInputFilePath();
+                string csvFilePath = inputPath.InputFilePath();
 
                 StreamReader source = new StreamReader(csvFilePath);
                 ArrayList footFallData = new ArrayList();

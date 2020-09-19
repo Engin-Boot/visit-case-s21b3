@@ -1,32 +1,24 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq.Expressions;
 using System.Text;
 
-/*using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections;
-using System.IO;
-*/
 namespace Receiver
 {
     class WriteCsvOutputFile
     {
        readonly StringBuilder _output = new StringBuilder();
        string path = @"c:\Result.csv";
-       private string _seperator = ",";
+       private readonly string Separator = ",";
        readonly string s = "E04";
-        private void WriteToCsvFromList(string heading, List<double> Input)
+        private void WriteToCsvFromList(string heading, List<double> input)
         {
             _output.AppendLine(heading);
             _output.AppendLine();
-            foreach (var t in Input)
+            foreach (var t in input)
             {
                 var k = t.ToString(s);
-                 _output.Append(string.Join(_seperator, k));
+                 _output.Append(string.Join(Separator, k));
             }
 
             _output.AppendLine();

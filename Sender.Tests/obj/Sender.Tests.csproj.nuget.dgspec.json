@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {}
+    "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender.Tests\\Sender.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj": {
+    "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender.Tests\\Sender.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender.Tests\\Sender.Tests.csproj",
         "projectName": "Sender.Tests",
-        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender.Tests\\Sender.Tests.csproj",
-        "packagesPath": "C:\\Users\\muskan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender.Tests\\Sender.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\muskan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj": {
-                "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj"
+              "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender\\Sender.csproj": {
+                "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender\\Sender.csproj"
               }
             }
           }
@@ -77,20 +74,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj": {
+    "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender\\Sender.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
+        "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit\\Sender\\Sender.csproj"
       },
       "frameworks": {
         "net472": {}

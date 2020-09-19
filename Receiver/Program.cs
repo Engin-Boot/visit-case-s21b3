@@ -1,9 +1,5 @@
 ﻿using System;
-//using System.Collections;
 using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
 
 namespace Receiver
 {
@@ -40,6 +36,7 @@ namespace Receiver
                 bool a = inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
                 bool b = inputObj.SetDayCount(dayDayTime[1]);
             }
+            #region comment
             /*
             inputObj.SetDateAndTime("01-09-2020", "09:10:11");
             inputObj.SetDayCount("Mon");
@@ -62,6 +59,7 @@ namespace Receiver
             inputObj.SetDateAndTime("09-09-2020", "09:10:11");
             inputObj.SetDayCount("Tue");
             */
+             #endregion
 
             List<double> avgPerHourInDayList = new List<double>();
             List<double> avgPerDayInWeekList = new List<double>();
@@ -72,6 +70,10 @@ namespace Receiver
             GetAvgPerHourInDayForAWeek(avgPerHourInDayList, inputObj);
             GetAvgPerDayInWeekForAMonth(avgPerDayInWeekList, inputObj);
             string peakDayInMonth=inputObj.GetPeakInMonth();
+
+            #region comment
+
+            /*
             Console.WriteLine("----------per hour------------");
             foreach (double item in avgPerHourInDayList)
             {
@@ -86,6 +88,9 @@ namespace Receiver
             Console.WriteLine(peakDayInMonth);
 
             Console.WriteLine("--------csv file--------");
+            */
+            #endregion
+
             WriteCsvOutputFile outputData= new WriteCsvOutputFile();
             outputData.WriteCsv(avgPerHourInDayList, avgPerDayInWeekList, peakDayInMonth);
         }

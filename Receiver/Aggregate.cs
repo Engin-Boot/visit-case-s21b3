@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
 using System.Collections;
 
 namespace Receiver
@@ -14,9 +12,8 @@ namespace Receiver
 
         private bool IsDateValid(string date)
         {
-            DateTime fromDateValue; 
             var formats = new[] { "dd/MM/yyyy" }; 
-            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out fromDateValue))
+            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime fromDateValue))
             { 
                 return true;
             } 
@@ -28,8 +25,7 @@ namespace Receiver
 
         private bool IsTimeValid(string time)
         { 
-            TimeSpan dummyOutput;
-            return TimeSpan.TryParse(time, out dummyOutput);
+            return TimeSpan.TryParse(time, out TimeSpan dummyOutput);
         }
 
         private void AddDateAndTime(string date, string time)
@@ -63,12 +59,12 @@ namespace Receiver
 
         private bool IsDayValid(string day)
         {
-            string[] _Days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+            string[] days = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 
             bool validDay = false;
-            for (int i = 0; i < _Days.Length; i++)
+            foreach (string tempDay in days)
             {
-                if (string.Equals(day, _Days[i]))
+                if (string.Equals(day, tempDay))
                 {
                     validDay = true;
                 }
