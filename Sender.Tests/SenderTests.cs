@@ -6,7 +6,7 @@ namespace Sender.Tests
 {
     public class SenderTests
     {
-        private readonly Sender.GetInputFilePath _senderObj = new Sender.GetInputFilePath();
+        private readonly GetInputFilePath _senderObj = new GetInputFilePath();
 
         [Fact]
         public void WhenPathOfSenderInputFileIsNullOrEmptyThenFileCannotBeRead()
@@ -21,8 +21,8 @@ namespace Sender.Tests
         {
             string filePath = _senderObj.InputFilePath();
             FileInfo infoOfInputFile = new FileInfo(filePath);
-            bool isFileExtensionCorrect = false;
-            isFileExtensionCorrect = infoOfInputFile.Extension.Equals(".csv");
+            //bool isFileExtensionCorrect = false;
+            bool isFileExtensionCorrect = infoOfInputFile.Extension.Equals(".csv");
             Assert.True(isFileExtensionCorrect, "correct file extension");
         }
         /*
