@@ -55,10 +55,10 @@ namespace Receiver.Tests
         [Fact]
         public void WhenGivenValidDateAndTimeThenCheckPeakInAMonth()
         {
-            bool isStringInserted1 = _aggregateObj.SetDateAndTime("11/09/2020", "12:30:40");
-            bool isStringInserted3 = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
-            bool isStringInserted4 = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
-            bool isStringInserted5 = _aggregateObj.SetDateAndTime("13/09/2020", "07:29:34");
+            bool unused_1 = _aggregateObj.SetDateAndTime("11/09/2020", "12:30:40");
+            bool dummy = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
+            bool dummy1 = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
+            bool unused_2 = _aggregateObj.SetDateAndTime("13/09/2020", "07:29:34");
 
             string peakInAMonth = _aggregateObj.GetPeakInMonth();
             Assert.Equal("12/09/2020", peakInAMonth);
@@ -67,10 +67,10 @@ namespace Receiver.Tests
         [Fact]
         public void WhenGivenValidDateAndTimeThenCheckAvgPerDayInAWeek()
         {
-            bool isStringInserted1 = _aggregateObj.SetDayCount("Mon");
-            bool isStringInserted3 = _aggregateObj.SetDayCount("Mon");
-            bool isStringInserted4 = _aggregateObj.SetDayCount("Tue");
-            bool isStringInserted5 = _aggregateObj.SetDayCount("Wed");
+            bool unused = _aggregateObj.SetDayCount("Mon");
+            bool dummy = _aggregateObj.SetDayCount("Mon");
+            bool dummy_1 = _aggregateObj.SetDayCount("Tue");
+            bool dummy_2 = _aggregateObj.SetDayCount("Wed");
 
             double avgPerDayInAWeek = _aggregateObj.GetAvgPerDayInWeek("Mon");
             Assert.Equal(0.5, avgPerDayInAWeek);
@@ -79,13 +79,13 @@ namespace Receiver.Tests
         [Fact]
         public void WhenGivenValidDateAndTimeThenCheckAvgPerHourInDay()
         {
-            bool isStringInserted1 = _aggregateObj.SetDateAndTime("11/09/2020", "03:00:40");
-            bool isStringInserted3 = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
-            bool isStringInserted4 = _aggregateObj.SetDateAndTime("13/09/2020", "03:30:20");
-            bool isStringInserted5 = _aggregateObj.SetDateAndTime("14/09/2020", "07:29:34");
-            bool isStringInserted6 = _aggregateObj.SetDateAndTime("15/09/2020", "15:45:19");
-            bool isStringInserted7 = _aggregateObj.SetDateAndTime("16/09/2020", "09:34:04");
-            bool isStringInserted8 = _aggregateObj.SetDateAndTime("17/09/2020", "08:29:34");
+            bool unused_1 = _aggregateObj.SetDateAndTime("11/09/2020", "03:00:40");
+            bool unused_2 = _aggregateObj.SetDateAndTime("12/09/2020", "03:08:20");
+            bool unused1_3 = _aggregateObj.SetDateAndTime("13/09/2020", "03:30:20");
+            bool unused1_4 = _aggregateObj.SetDateAndTime("14/09/2020", "07:29:34");
+            bool unused1_5 = _aggregateObj.SetDateAndTime("15/09/2020", "15:45:19");
+            bool unused1_6 = _aggregateObj.SetDateAndTime("16/09/2020", "09:34:04");
+            bool unused1_7 = _aggregateObj.SetDateAndTime("17/09/2020", "08:29:34");
 
             double avgPerHourInDay = _aggregateObj.GetAvgPerHourInDay(03);
             Assert.Equal(0.43, avgPerHourInDay);

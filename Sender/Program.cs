@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace Sender
 {
-    class Program
+   abstract class Program
     {
         static void Main()
         {

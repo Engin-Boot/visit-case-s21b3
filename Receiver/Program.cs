@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Receiver
 {
-    class Program
+   abstract class Program
     {
         static void GetAvgPerHourInDayForAWeek(List<double> avgPerHourInDayList, AggregateClass inputObj)
         {
@@ -33,8 +33,8 @@ namespace Receiver
             while ((input = Console.ReadLine()) != null)
             {
                 var dayDayTime = input.Split(new[] {','}, 3);
-                bool a = inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
-                bool b = inputObj.SetDayCount(dayDayTime[1]);
+                bool unused = inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
+                bool dummy = inputObj.SetDayCount(dayDayTime[1]);
             }
             #region comment
             /*
