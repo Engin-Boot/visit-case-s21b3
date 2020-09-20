@@ -13,7 +13,7 @@ namespace Receiver
         private bool IsDateValid(string date)
         {
             var formats = new[] { "dd/MM/yyyy" }; 
-            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime fromDateValue))
+            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime unused))
             { 
                 return true;
             } 
@@ -25,7 +25,7 @@ namespace Receiver
 
         private bool IsTimeValid(string time)
         { 
-            return TimeSpan.TryParse(time, out TimeSpan dummyOutput);
+            return TimeSpan.TryParse(time, out TimeSpan unused);
         }
 
         private void AddDateAndTime(string date, string time)
