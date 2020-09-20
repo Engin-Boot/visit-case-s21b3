@@ -10,8 +10,8 @@
     <ProjectGuid>{50492339-2AB4-45AE-8A4F-610054E8CDE6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Reciever.Tests</RootNamespace>
-    <AssemblyName>Reciever.Tests</AssemblyName>
+    <RootNamespace>Receiver.Tests</RootNamespace>
+    <AssemblyName>Receiver.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -58,7 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RecieverTest.cs" />
+    <Compile Include="ReceiverTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,7 +68,7 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Reciever\Reciever.csproj">
+    <ProjectReference Include="..\Receiver\Receiver.csproj">
       <Project>{e9cab6c6-d45a-458c-b1b9-1bc57387ab58}</Project>
       <Name>Reciever</Name>
     </ProjectReference>
