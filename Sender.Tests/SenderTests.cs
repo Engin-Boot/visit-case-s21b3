@@ -20,7 +20,7 @@ namespace Sender.Tests
 
             return csvFilePath;
         }
-
+       /*
         [Fact]
         public static void WhenFileIsPathIsGivenThenItsValidityIsChecked()
         {
@@ -29,7 +29,7 @@ namespace Sender.Tests
             Assert.True(fr.CheckFileExists(path));
 
         }
-
+       */
         [Fact]
         public static void WhenFileExtensionIsNotCsv()
         {

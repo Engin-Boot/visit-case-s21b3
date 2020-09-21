@@ -6181,11 +6181,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3-342\\Receiver.Tests\\Receiver.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3-342\\Receiver.Tests\\Receiver.Tests.csproj",
       "projectName": "Receiver.Tests",
-      "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3-342\\Receiver.Tests\\Receiver.Tests.csproj",
+      "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3-342\\Receiver.Tests\\Receiver.Tests.csproj",
       "packagesPath": "C:\\Users\\Ekta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3-342\\Receiver.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3-342\\Receiver.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ekta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6201,8 +6201,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3-342\\Receiver\\Receiver.csproj": {
-              "projectPath": "C:\\Users\\Ekta\\Source\\Repos\\visit-case-s21b3-342\\Receiver\\Receiver.csproj"
+            "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3-342\\Receiver\\Receiver.csproj": {
+              "projectPath": "C:\\Users\\Ekta\\source\\repos\\visit-case-s21b3-342\\Receiver\\Receiver.csproj"
             }
           }
         }
