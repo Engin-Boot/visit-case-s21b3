@@ -16,8 +16,8 @@ namespace Sender
                 string csvFilePath = inputPath.InputFilePath();
 
                 CheckInputFileValid checkFile = new CheckInputFileValid();
-                if (checkFile.CheckFileExists(csvFilePath))
-                {
+                bool validOrNot = checkFile.CheckFileExists(csvFilePath);
+                
                     StreamReader source = new StreamReader(csvFilePath);
                     ArrayList footFallData = new ArrayList();
                     string line;
@@ -30,7 +30,7 @@ namespace Sender
                     {
                         Console.WriteLine(data);
                     }
-                }
+                
             }
             catch (Exception ex)
             {
