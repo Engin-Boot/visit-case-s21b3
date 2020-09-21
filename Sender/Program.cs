@@ -1,29 +1,19 @@
 ﻿using System;
 using System.IO;
 using System.Collections;
-using System.Reflection;
+//using System.Reflection;
 
 namespace Sender
 {
    abstract class Program
     {
-        public static string GetInputFilePath()
-        {
-            string csvFilePath = "";
-            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            if (executableLocation != null)
-            {
-                csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
-
-            }
-
-            return csvFilePath;
-        }
+        
         static void Main()
         {
             try
             {
-                string csvFilePath = GetInputFilePath();
+                GetInputFilePath inputPath = new GetInputFilePath();
+                string csvFilePath = inputPath.InputFilePath();
 
                 CheckInputFileValid checkFile = new CheckInputFileValid();
                 if (checkFile.CheckFileExists(csvFilePath))
