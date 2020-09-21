@@ -25,16 +25,15 @@ namespace Sender.Tests
             bool isFileExtensionCorrect = infoOfInputFile.Extension.Equals(".csv");
             Assert.True(isFileExtensionCorrect, "correct file extension");
         }
-        /*
+        
 
         [Fact]
         public void WhenFileExistsAtTheSpecifiedLocationThenSenderWillReadTheFile()
         {
             bool isFilePresent = false;
-            string filePath = _senderObj.InputFilePath();
-            isFilePresent = File.Exists(filePath);
-            Assert.False(isFilePresent, filePath);
+            isFilePresent = File.Exists("SenderInputCsv.csv");
+            Assert.True(isFilePresent, filePath);
         }
-        */
+        
     }
 }
