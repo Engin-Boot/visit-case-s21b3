@@ -12,8 +12,8 @@ namespace Receiver
 
         private bool IsDateValid(string date)
         {
-            var formats = new[] { "dd/MM/yyyy" }; 
-            if (DateTime.TryParseExact(date, formats, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime unused))
+           // var formats = new[] { "dd/MM/yyyy" }; 
+            if (DateTime.TryParse(date, out DateTime unused))
             { 
                 return true;
             } 
@@ -101,7 +101,11 @@ namespace Receiver
         private bool CompareTime(string time , int start)
         {
             bool ans = false;
-            int timeGiven= Int32.Parse(time.Substring(0, 2));
+            //string s = time.Substring(0, 2);
+            char[] separator = new char[] {':'};
+            Int32 noOfString = 3;
+            string[] s = time.Split(separator, noOfString, StringSplitOptions.None);
+            int timeGiven= Int32.Parse(s[0]);
             if (timeGiven == start)
             {
                 ans = true;

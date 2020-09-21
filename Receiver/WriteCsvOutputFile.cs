@@ -9,16 +9,17 @@ namespace Receiver
     {
        readonly StringBuilder _output = new StringBuilder();
        string path = @"c:\Result.csv";
-       private readonly string Separator = ",";
-       readonly string s = "E04";
+      // private readonly string Separator = ",";
+       //readonly string s = "E04";
         private void WriteToCsvFromList(string heading, List<double> input)
         {
             _output.AppendLine(heading);
             _output.AppendLine();
             foreach (var t in input)
             {
-                var k = t.ToString(s);
-                 _output.Append(string.Join(Separator, k));
+                var k = t.ToString();
+                // _output.Append(string.Join(Separator, k));
+                _output.AppendLine(k);
             }
 
             _output.AppendLine();

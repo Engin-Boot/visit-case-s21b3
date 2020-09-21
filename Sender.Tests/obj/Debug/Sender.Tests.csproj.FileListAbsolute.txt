@@ -1,0 +1,2 @@
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\Sender.Tests.csprojAssemblyReference.cache
+C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender.Tests\obj\Debug\Sender.Tests.csproj.CoreCompileInputs.cache

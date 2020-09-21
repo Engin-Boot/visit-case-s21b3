@@ -85,7 +85,12 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj"
+        "projectPath": "C:\\Users\\muskan\\Desktop\\git repo\\visit-case-s21b3\\Sender\\Sender.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
       },
       "frameworks": {
         "net472": {}

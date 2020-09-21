@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace Receiver
 {
-   abstract class Program
+    abstract class Program
     {
+        
         static void GetAvgPerHourInDayForAWeek(List<double> avgPerHourInDayList, AggregateClass inputObj)
         {
-            for (int i = 0; i < 24; i++)
+            for (int i = 0; i < 12; i++)
             {
                 avgPerHourInDayList.Add(inputObj.GetAvgPerHourInDay(i));
             }
@@ -21,46 +22,40 @@ namespace Receiver
                 avgPerDayInWeekList.Add(inputObj.GetAvgPerDayInWeek(daysName[i]));
             }
         }
-
-
-
+        
+   
         static void Main()
         {
-            AggregateClass inputObj= new AggregateClass();
-            
-            string input;
-            
-            while ((input = Console.ReadLine()) != null)
+            AggregateClass inputObj = new AggregateClass();
+            try
             {
-                var dayDayTime = input.Split(new[] {','}, 3);
-                bool unused = inputObj.SetDateAndTime(dayDayTime[0],dayDayTime[2]);
-                bool dummy = inputObj.SetDayCount(dayDayTime[1]);
-            }
-            #region comment
-            /*
-            inputObj.SetDateAndTime("01-09-2020", "09:10:11");
-            inputObj.SetDayCount("Mon");
-            inputObj.SetDateAndTime("01-09-2020", "10:10:11");
-            inputObj.SetDayCount("Mon");
-            inputObj.SetDateAndTime("02-09-2020", "09:10:11");
-            inputObj.SetDayCount("Tue");
-            inputObj.SetDateAndTime("03-09-2020", "09:10:11");
-            inputObj.SetDayCount("Wed");
-            inputObj.SetDateAndTime("04-09-2020", "09:10:11");
-            inputObj.SetDayCount("Thu");
-            inputObj.SetDateAndTime("05-09-2020", "09:10:11");
-            inputObj.SetDayCount("Fri");
-            inputObj.SetDateAndTime("06-09-2020", "09:10:11");
-            inputObj.SetDayCount("Sat");
-            inputObj.SetDateAndTime("07-09-2020", "09:10:11");
-            inputObj.SetDayCount("Sun");
-            inputObj.SetDateAndTime("08-09-2020", "09:10:11");
-            inputObj.SetDayCount("Mon");
-            inputObj.SetDateAndTime("09-09-2020", "09:10:11");
-            inputObj.SetDayCount("Tue");
-            */
-             #endregion
+                //var listofinputstring = new List<string>();
+                while (true)
+                {
+                    string line = Console.ReadLine();
+                    if (string.IsNullOrEmpty(line)) // Check string
+                    {
+                        break;
+                    }
+                    char[] separator = new char[] {','};
+                    Int32 noOfString = 3;
+                    string[] stringfromconsole = line.Split(separator, noOfString, StringSplitOptions.None);
+                    bool unused = inputObj.SetDateAndTime(stringfromconsole[0], stringfromconsole[2]);
+                    bool dummy = inputObj.SetDayCount(stringfromconsole[1]);
+                    
+                }
 
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error in reading from the pipe" + e);
+            }
+
+        #region comment
+           
+             #endregion
+             
+            
             List<double> avgPerHourInDayList = new List<double>();
             List<double> avgPerDayInWeekList = new List<double>();
            // String peakDayInMonth = "";
@@ -73,26 +68,12 @@ namespace Receiver
 
             #region comment
 
-            /*
-            Console.WriteLine("----------per hour------------");
-            foreach (double item in avgPerHourInDayList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("--------per day----------");
-            foreach (double item2 in avgPerDayInWeekList)
-            {
-                Console.WriteLine(item2);
-            }
-            Console.WriteLine("------peak------");
-            Console.WriteLine(peakDayInMonth);
-
-            Console.WriteLine("--------csv file--------");
-            */
+           
             #endregion
 
             WriteCsvOutputFile outputData= new WriteCsvOutputFile();
             outputData.WriteCsv(avgPerHourInDayList, avgPerDayInWeekList, peakDayInMonth);
+            
         }
     }
 }

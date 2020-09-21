@@ -3,9 +3,10 @@
     "",
     "\\.github",
     "\\Receiver",
-    "\\Receiver.Tests",
-    "\\Sender.Tests"
+    "\\Receiver\\bin",
+    "\\Receiver\\bin\\Debug",
+    "\\Sender"
   ],
-  "SelectedNode": "\\Sender.Tests\\UnitTest1.cs",
+  "SelectedNode": "\\Receiver\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
