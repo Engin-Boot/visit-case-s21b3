@@ -1,17 +1,24 @@
 //using System;
 using System.IO;
 using Xunit;
+using System.Reflection;
 
 namespace Sender.Tests
 {
     public class SenderTests
     {
+        
         private static string GivePath(string file)
         {
+            string csvFilePath = "";
+            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            if (executableLocation != null)
+            {
+                csvFilePath = Path.Combine(executableLocation, file);
 
-            string path = Directory.GetCurrentDirectory();
-            path += @"\" + file;
-            return path;
+            }
+
+            return csvFilePath;
         }
 
         [Fact]
