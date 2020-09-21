@@ -27,9 +27,8 @@ namespace Receiver
         static void Main()
         {
             AggregateClass inputObj = new AggregateClass();
-            try
-            {
-                //var listofinputstring = new List<string>();
+            
+            //var listofinputstring = new List<string>();
                 while (true)
                 {
                     string line = Console.ReadLine();
@@ -44,14 +43,7 @@ namespace Receiver
                     bool dummy = inputObj.SetDayCount(stringfromconsole[1]);
                     
                 }
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error in reading from the pipe" + e);
-            }
-
-        #region comment
+                #region comment
            
              #endregion
              
