@@ -6,34 +6,43 @@ namespace Sender.Tests
 {
     public class SenderTests
     {
-        private readonly GetInputFilePath _senderObj = new GetInputFilePath();
+        private static string GivePath(string file)
+        {
+
+            string path = Directory.GetCurrentDirectory();
+            path += @"\" + file;
+            return path;
+        }
 
         [Fact]
-        public void WhenPathOfSenderInputFileIsNullOrEmptyThenFileCannotBeRead()
+        public static void WhenFileIsPathIsGivenThenItsValidityIsChecked()
         {
-            string csvFilePath = _senderObj.InputFilePath();
-            bool ans = string.IsNullOrEmpty(csvFilePath);
-            Assert.False(ans, "input file path is null/empty");
+            var fr = new CheckInputFileValid();
+            string path = GivePath("SenderInputCsv.csv");
+            Assert.True(fr.CheckFileExists(path));
+
         }
 
         [Fact]
-        public void WhenFileExtensionIsCsvThenSenderWillReadFile()
+        public static void WhenFileExtensionIsNotCsv()
         {
-            string filePath = _senderObj.InputFilePath();
-            FileInfo infoOfInputFile = new FileInfo(filePath);
-            //bool isFileExtensionCorrect = false;
-            bool isFileExtensionCorrect = infoOfInputFile.Extension.Equals(".csv");
-            Assert.True(isFileExtensionCorrect, "correct file extension");
+            var ff = new CheckInputFileValid();
+            string path = GivePath("SenderInputCsv.cst");
+            Assert.False(ff.CheckFileExtensionIsCorrect(path));
         }
-        
-       /*
         [Fact]
-        public void WhenFileExistsAtTheSpecifiedLocationThenSenderWillReadTheFile()
+        public static void WhenLocationSpecifiedOfFileIsNotCorrectThenSenderCannotRead()
         {
-            bool isFilePresent = false;
-            isFilePresent = File.Exists("SenderInputCsv.csv");
-            Assert.True(isFilePresent, filePath);
+            var ff = new CheckInputFileValid();
+            string path = GivePath("SenderCsv.csv");
+            Assert.False(ff.CheckIfFileExistsAtSpecifiedLocation(path));
         }
-        */
+        [Fact]
+        public static void WhenWrongFileIsInputThenSenderCannotRead()
+        {
+            var ff = new CheckInputFileValid();
+            string path = GivePath("SenderCsv.cst");
+            Assert.False(ff.CheckFileExists(path));
+        }
     }
 }
