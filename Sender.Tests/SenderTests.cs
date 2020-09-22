@@ -8,7 +8,7 @@ namespace Sender.Tests
     abstract class SenderTests
     {
         
-        private static string GivePath(string file)
+        public static string GivePath(string file)
         {
             string csvFilePath = "";
             string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
