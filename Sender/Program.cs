@@ -5,8 +5,29 @@ using System.Reflection;
 
 namespace Sender
 {
-   abstract class Program
+   public class Program
     {
+        public void CallCsvFile( string executableLocation , string csvFilePath)
+        {
+            csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
+            CheckInputFileValid checkFile = new CheckInputFileValid();
+            if (checkFile.CheckFileExists(csvFilePath))
+            {
+                StreamReader source = new StreamReader(csvFilePath);
+                ArrayList footFallData = new ArrayList();
+                string line;
+                while ((line = source.ReadLine()) != null)
+                {
+                    footFallData.Add(line);
+                }
+
+                foreach (string data in footFallData)
+                {
+                    Console.WriteLine(data);
+                }
+            }
+
+        }
         
         static void Main()
         {
@@ -16,23 +37,8 @@ namespace Sender
                 string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 if (executableLocation != null)
                 {
-                    csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
-                    CheckInputFileValid checkFile = new CheckInputFileValid();
-                    if (checkFile.CheckFileExists(csvFilePath))
-                    {
-                        StreamReader source = new StreamReader(csvFilePath);
-                        ArrayList footFallData = new ArrayList();
-                        string line;
-                        while ((line = source.ReadLine()) != null)
-                        {
-                            footFallData.Add(line);
-                        }
-
-                        foreach (string data in footFallData)
-                        {
-                            Console.WriteLine(data);
-                        }
-                    }
+                    Program p = new Program(); 
+                    p.CallCsvFile(executableLocation ,csvFilePath);
                 }
 
             }
