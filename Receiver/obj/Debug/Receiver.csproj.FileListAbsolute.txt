@@ -12,3 +12,10 @@ C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\Receiver.cs
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\Receiver.csproj.CoreCompileInputs.cache
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\Receiver.exe
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Receiver\obj\Debug\Receiver.pdb
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\bin\Debug\Receiver.exe.config
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\bin\Debug\Receiver.exe
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\bin\Debug\Receiver.pdb
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\obj\Debug\Receiver.csprojAssemblyReference.cache
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\obj\Debug\Receiver.csproj.CoreCompileInputs.cache
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\obj\Debug\Receiver.exe
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Receiver\obj\Debug\Receiver.pdb

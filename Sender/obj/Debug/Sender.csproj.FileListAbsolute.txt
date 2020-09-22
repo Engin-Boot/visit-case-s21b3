@@ -12,3 +12,10 @@ C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender\obj\Debug\Sender.csproj
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender\obj\Debug\Sender.exe
 C:\Users\muskan\Desktop\git repo\visit-case-s21b3\Sender\obj\Debug\Sender.pdb
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\bin\Debug\Sender.exe.config
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\bin\Debug\Sender.exe
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\bin\Debug\Sender.pdb
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\obj\Debug\Sender.csprojAssemblyReference.cache
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\obj\Debug\Sender.exe
+C:\Users\Ekta\source\repos\visit-case-s21b3-342\Sender\obj\Debug\Sender.pdb

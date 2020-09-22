@@ -38,9 +38,9 @@ namespace Receiver
                     }
                     char[] separator = new char[] {','};
                     Int32 noOfString = 3;
-                    string[] stringfromconsole = line.Split(separator, noOfString, StringSplitOptions.None);
-                    bool unused = inputObj.SetDateAndTime(stringfromconsole[0], stringfromconsole[2]);
-                    bool dummy = inputObj.SetDayCount(stringfromconsole[1]);
+                    string[] stringFromConsole = line.Split(separator, noOfString, StringSplitOptions.None);
+                    bool unused = inputObj.SetDateAndTime(stringFromConsole[0], stringFromConsole[2]);
+                    bool dummy = inputObj.SetDayCount(stringFromConsole[1]);
                     
                 }
                 #region comment

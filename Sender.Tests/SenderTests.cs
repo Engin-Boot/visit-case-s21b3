@@ -1,13 +1,13 @@
 //using System;
 using System.IO;
 using Xunit;
+using System.Reflection;
 
 namespace Sender.Tests
 {
     public class SenderTests
     {
-        private readonly GetInputFilePath _senderObj = new GetInputFilePath();
-
+        
         private static string GivePath(string file)
         {
             string csvFilePath = "";
@@ -20,15 +20,16 @@ namespace Sender.Tests
 
             return csvFilePath;
         }
-        /*
-         [Fact]
-         public static void WhenFileIsPathIsGivenThenItsValidityIsChecked()
-         {
-             var fr = new CheckInputFileValid();
-             string path = GivePath("SenderInputCsv.csv");
-             Assert.True(fr.CheckFileExists(path));
-         }
-        */
+       /*
+        [Fact]
+        public static void WhenFileIsPathIsGivenThenItsValidityIsChecked()
+        {
+            var fr = new CheckInputFileValid();
+            string path = GivePath("SenderInputCsv.csv");
+            Assert.True(fr.CheckFileExists(path));
+
+        }
+       */
         [Fact]
         public static void WhenFileExtensionIsNotCsv()
         {
@@ -49,5 +50,6 @@ namespace Sender.Tests
             var ff = new CheckInputFileValid();
             string path = GivePath("SenderCsv.cst");
             Assert.False(ff.CheckFileExists(path));
+        }
     }
 }
