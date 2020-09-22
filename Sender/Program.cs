@@ -33,12 +33,11 @@ namespace Sender
         {
             try
             {
-                string filePath = "";
                 string location = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 if (location != null)
                 {
                     Program p = new Program(); 
-                    filePath = Path.Combine(location, "SenderInputCsv.csv");
+                    string filePath = Path.Combine(location, "SenderInputCsv.csv");
                     p.CallCsvFile(filePath);
                 }
 
