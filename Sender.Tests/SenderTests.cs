@@ -5,10 +5,10 @@ using System.Reflection;
 
 namespace Sender.Tests
 {
-     public class SenderTests
+     public abstract class SenderTests
     {
         
-        public static string GivePath(string file)
+        private static string GivePath(string file)
         {
             string csvFilePath = "";
             string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);

@@ -7,9 +7,9 @@ namespace Sender
 {
    public class Program
     {
-        public void CallCsvFile( string executableLocation , string csvFilePath)
+        private void CallCsvFile( string executableLocation , string csvFilePath)
         {
-            csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
+            //csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
             CheckInputFileValid checkFile = new CheckInputFileValid();
             if (checkFile.CheckFileExists(csvFilePath))
             {
@@ -38,6 +38,7 @@ namespace Sender
                 if (Location != null)
                 {
                     Program p = new Program(); 
+                    FilePath = Path.Combine(Location, "SenderInputCsv.csv");
                     p.CallCsvFile(Location ,FilePath);
                 }
 
