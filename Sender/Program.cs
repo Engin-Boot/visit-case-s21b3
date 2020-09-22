@@ -9,7 +9,6 @@ namespace Sender
     {
         private void CallCsvFile( string csvFilePath)
         {
-            //csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
             CheckInputFileValid checkFile = new CheckInputFileValid();
             if (checkFile.CheckFileExists(csvFilePath))
             {
