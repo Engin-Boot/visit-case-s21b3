@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Sender.Tests
 {
-    public class SenderTests
+    abstract class SenderTests
     {
         
         private static string GivePath(string file)
