@@ -7,7 +7,7 @@ namespace Sender
 {
    public class Program
     {
-        private void CallCsvFile( string executableLocation , string csvFilePath)
+        private void CallCsvFile( string csvFilePath)
         {
             //csvFilePath = Path.Combine(executableLocation, "SenderInputCsv.csv");
             CheckInputFileValid checkFile = new CheckInputFileValid();
@@ -33,13 +33,13 @@ namespace Sender
         {
             try
             {
-                string FilePath = "";
-                string Location = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                if (Location != null)
+                string filePath = "";
+                string location = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                if (location != null)
                 {
                     Program p = new Program(); 
-                    FilePath = Path.Combine(Location, "SenderInputCsv.csv");
-                    p.CallCsvFile(Location ,FilePath);
+                    filePath = Path.Combine(location, "SenderInputCsv.csv");
+                    p.CallCsvFile(filePath);
                 }
 
             }
