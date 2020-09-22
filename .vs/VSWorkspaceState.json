@@ -1,12 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\.github",
-    "\\Receiver",
-    "\\Receiver\\bin",
-    "\\Receiver\\bin\\Debug",
-    "\\Sender"
+    ""
   ],
-  "SelectedNode": "\\Receiver\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

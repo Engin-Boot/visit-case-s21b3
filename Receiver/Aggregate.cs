@@ -12,7 +12,6 @@ namespace Receiver
 
         private bool IsDateValid(string date)
         {
-           // var formats = new[] { "dd/MM/yyyy" }; 
             if (DateTime.TryParse(date, out DateTime unused))
             { 
                 return true;
